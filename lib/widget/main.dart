@@ -10,7 +10,7 @@ class WidgetPage extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     final wordPair = WordPair.random();
-    return MaterialApp(
+    return RandomWords();
 //      title: 'welcome to the flutter',
 //      home : Scaffold(
 //        appBar: AppBar(
@@ -22,8 +22,6 @@ class WidgetPage extends StatelessWidget {
 //          child: RandomWords(), //自定义组件
 //        ),
 //      ),
-      home: RandomWords(),
-    );
   }
 }
 

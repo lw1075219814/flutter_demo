@@ -30,8 +30,14 @@ class Constants {
   static const ROUTE_WIDGET = '/widget';
 
   //下来框
-  static const ROUTE_DROPDOWN_BUTTON = 'dropdown_button';
+  static const ROUTE_DROPDOWN_BUTTON = '/dropdown_button';
 
   //关于页
   static const ROUTE_ABOUT = '/about';
+
+  //SharedPreferences
+  static const ROUTE_KEY_VALUE = '/key_value';
+
+  //http_request
+  static const ROUTE_HTTP_REQUEST = '/http_request';
 }

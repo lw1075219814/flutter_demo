@@ -10,7 +10,9 @@ class MainListPage extends StatelessWidget {
     'load_local_json',
     'load_net_image',
     'routes',
-    'widget'
+    'widget',
+    'key_value',
+    'http_request'
   ];
 
   //测滑
@@ -36,6 +38,12 @@ class MainListPage extends StatelessWidget {
 
   //自定义组件
   static const int _WIDGET = 7;
+
+  //键值对
+  static const int _KEY_VALUE = 8;
+
+  //http request
+  static const int _KEY_HTTP_REQUEST = 9;
 
   void onItemClick(BuildContext context, int position) {
     switch (position) {
@@ -64,6 +72,12 @@ class MainListPage extends StatelessWidget {
         break;
       case _WIDGET:
         Navigator.of(context).pushNamed(Constants.ROUTE_WIDGET);
+        break;
+      case _KEY_VALUE:
+        Navigator.of(context).pushNamed(Constants.ROUTE_KEY_VALUE);
+        break;
+      case _KEY_HTTP_REQUEST:
+        Navigator.of(context).pushNamed(Constants.ROUTE_HTTP_REQUEST);
         break;
       default:
         break;

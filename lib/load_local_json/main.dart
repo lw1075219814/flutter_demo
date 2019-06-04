@@ -5,14 +5,13 @@ class LoadLocalJsonPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return new MaterialApp(
-        home: new Scaffold(
+    return new Scaffold(
       appBar: new AppBar(
         title: new Text('Load Local Json'),
         backgroundColor: Colors.blue,
       ),
       body: new MyListView(),
-    ));
+    );
   }
 }
 

@@ -46,26 +46,23 @@ class DropDownButtonState extends State<DropDownButtonPage> {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return new MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: new Scaffold(
-        appBar: new AppBar(
-          title: new Text('Drop Down Menu'),
-          backgroundColor: Colors.blue,
-        ),
-        body: new Container(
-          child: new Center(
-            child: new Column(
-              //crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                new Text('Please choose a word'),
-                new DropdownButton(
-                    value: _selectedWord,
-                    items: _dropDownMenuItems,
-                    onChanged: changeMenuItem)
-              ],
-            ),
+    return new Scaffold(
+      appBar: new AppBar(
+        title: new Text('Drop Down Menu'),
+        backgroundColor: Colors.blue,
+      ),
+      body: new Container(
+        child: new Center(
+          child: new Column(
+            //crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              new Text('Please choose a word'),
+              new DropdownButton(
+                  value: _selectedWord,
+                  items: _dropDownMenuItems,
+                  onChanged: changeMenuItem)
+            ],
           ),
         ),
       ),
